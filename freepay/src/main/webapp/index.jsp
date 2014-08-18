@@ -32,15 +32,14 @@
 				nombreUsuario = getNombreUsuario(usuario, clave);
 				
 				if(nombreUsuario) {
-					document.getElementById('nombreUsuario').innerHtml = nombreUsuario;
 					document.getElementById('formLogin').className = 'oculto';
 					document.getElementById('formApp').className = 'form';
+					limpiarMensajes('');
+					document.getElementById('nombreUsuario').innerHtml = nombreUsuario;
 				} else {
-					alert(0);
 					mostrarMensajeError('Usuario y/o calve no válidos.');
 				}
 			} else {
-				alert(2);
 				mostrarMensajeError('Usuario y/o calve no válidos.');
 			}
 		}
@@ -56,10 +55,16 @@
 		}
 		
 		function mostrarMensajeError(mensaje) {
-			alert(1);
 			var mensajes = document.getElementById('mensajes'); 
 			mensajes.className = 'error';
 			mensajes.innerHTML = mensaje;
+			setTimeout(function(){limpiarMensajes();}, 3000);
+		}
+		
+		function limpiarMensajes() {
+			var mensajes = document.getElementById('mensajes'); 
+			mensajes.className = '';
+			mensajes.innerHTML = '';
 		}
 	</script>
 </head>
