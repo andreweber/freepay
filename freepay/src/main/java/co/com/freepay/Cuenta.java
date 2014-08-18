@@ -1,5 +1,7 @@
 package co.com.freepay;
 
+import java.util.Date;
+
 /**
  * @author ANDRES
  */
@@ -13,6 +15,7 @@ public class Cuenta {
      * saldo disponible en la cuenta.
      */
     private long saldo;
+    private Date fechaApertura; 
 
     /**
      * @param numeroCuenta numero de la cuenta.
