@@ -17,8 +17,8 @@ public class Cuenta {
     /**
      * @param numeroCuenta numero de la cuenta.
      */
-    public Cuenta(final String numeroCuenta) {
-        numero = Long.valueOf(numeroCuenta);
+    public Cuenta(final long numeroCuenta) {
+        numero = numeroCuenta;
     }
 
     /**
