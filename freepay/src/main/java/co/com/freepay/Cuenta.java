@@ -25,6 +25,7 @@ public class Cuenta {
      */
     public Cuenta(final long numeroCuenta) {
         numero = numeroCuenta;
+        fechaApertura = new Date();
     }
 
     /**
