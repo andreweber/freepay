@@ -15,7 +15,10 @@ public class Cuenta {
      * saldo disponible en la cuenta.
      */
     private long saldo;
-    private Date fechaApertura; 
+    /**
+     * fecha de apertura de la cuenta.
+     */
+    private Date fechaApertura;
 
     /**
      * @param numeroCuenta numero de la cuenta.
