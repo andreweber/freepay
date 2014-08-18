@@ -39,11 +39,11 @@ public class Cuenta {
      * @param monto valor a retirar.
      * @throws Exception en caso de no poder hacer el retiro.
      */
-    public final void retirar(long monto) throws Exception {
-        if(monto < 0) {
+    public final void retirar(final long monto) throws Exception {
+        if (monto < 0) {
             throw new Exception("El monto a retirar no puede ser negativo.");
         }
-        if(monto < saldo) {
+        if (monto < saldo) {
             saldo = saldo - monto;
         } else {
             throw new Exception("Saldo insuficiente para realizar el retiro.");
@@ -54,8 +54,8 @@ public class Cuenta {
      * @param monto valor a consignar.
      * @throws Exception en caso de no poder hacer la consignación.
      */
-    public final void consignar(long monto) throws Exception {
-        if(monto < 0) {
+    public final void consignar(final long monto) throws Exception {
+        if (monto < 0) {
             throw new Exception("El monto a consignar no puede ser negativo.");
         }
         saldo = saldo + monto;
