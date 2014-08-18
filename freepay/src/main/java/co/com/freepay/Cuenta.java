@@ -1,7 +1,5 @@
 package co.com.freepay;
 
-import java.util.Date;
-
 /**
  * @author ANDRES
  */
