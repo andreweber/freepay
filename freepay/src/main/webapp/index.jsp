@@ -36,9 +36,11 @@
 					document.getElementById('formLogin').className = 'oculto';
 					document.getElementById('formApp').className = 'form';
 				} else {
+					alert(0);
 					mostrarMensajeError('Usuario y/o calve no válidos.');
 				}
 			} else {
+				alert(2);
 				mostrarMensajeError('Usuario y/o calve no válidos.');
 			}
 		}
@@ -54,9 +56,10 @@
 		}
 		
 		function mostrarMensajeError(mensaje) {
+			alert(1);
 			var mensajes = document.getElementById('mensajes'); 
 			mensajes.className = 'error';
-			mensajes.innerHtml = mensaje;
+			mensajes.innerHTML = mensaje;
 		}
 	</script>
 </head>
