@@ -5,17 +5,23 @@ package co.com.freepay;
  */
 public class Cuenta {
 
+	/**
+	 * numero de la cuenta
+	 */
 	private long numero;
-	private long saldo;
+	/**
+	 * saldo disponible en la cuenta
+	 */
+    private long saldo;
 
-	/** 
+	/**
 	 * @param numero
 	 */
 	public Cuenta(long numero) {
 		this.numero = numero;
 	}
 
-	/** 
+	/**
 	 * @return
 	 */
 	public long getNumero() {
@@ -37,7 +43,6 @@ public class Cuenta {
 		if(monto < 0) {
 			throw new Exception("El monto a retirar no puede ser negativo.");
 		}
-		
 		if(monto < saldo) {
 			saldo = saldo - monto;
 		} else {
@@ -53,7 +58,6 @@ public class Cuenta {
 		if(monto < 0) {
 			throw new Exception("El monto a consignar no puede ser negativo.");
 		}
-		
 		saldo = saldo + monto;
 	}
 }
