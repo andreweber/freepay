@@ -1,41 +1,35 @@
 package co.com.freepay;
 
 /**
- * 
  * @author ANDRES
- *
  */
 public class Cuenta {
-	
+
 	private long numero;
 	private long saldo;
-	
-	/**
-	 * 
+
+	/** 
 	 * @param numero
 	 */
 	public Cuenta(long numero) {
 		this.numero = numero;
 	}
-	
-	/**
-	 * 
+
+	/** 
 	 * @return
 	 */
 	public long getNumero() {
 		return numero;
 	}
-	
+
 	/**
-	 * 
 	 * @return
 	 */
 	public long getSaldo() {
 		return saldo;
 	}
-	
+
 	/**
-	 * 
 	 * @param monto
 	 * @throws Exception
 	 */
@@ -50,9 +44,8 @@ public class Cuenta {
 			throw new Exception("Saldo insuficiente para realizar el retiro.");
 		}
 	}
-	
+
 	/**
-	 * 
 	 * @param monto
 	 * @throws Exception
 	 */
