@@ -13,6 +13,9 @@ public class Cuenta {
      * saldo disponible en la cuenta.
      */
     private long saldo;
+    /**
+     * nombre de la cuenta.
+     */
     private String nombre;
 
     /**
