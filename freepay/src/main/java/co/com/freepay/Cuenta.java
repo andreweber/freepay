@@ -13,6 +13,7 @@ public class Cuenta {
      * saldo disponible en la cuenta.
      */
     private long saldo;
+    private String nombre;
 
     /**
      * @param numeroCuenta numero de la cuenta.
