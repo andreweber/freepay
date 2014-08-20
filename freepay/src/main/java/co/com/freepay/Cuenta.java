@@ -13,6 +13,7 @@ public class Cuenta {
      * saldo disponible en la cuenta.
      */
     private long saldo;
+    private String nombre;
 
     /**
      * @param numeroCuenta numero de la cuenta.
@@ -52,7 +53,7 @@ public class Cuenta {
 
     /**
      * @param monto valor a consignar.
-     * @throws Exception en caso de no poder hacer la consignación.
+     * @throws Exception en caso de no poder hacer la consignaciÃ³n.
      */
     public final void consignar(final long monto) throws Exception {
         if (monto < 0) {
